@@ -1,0 +1,956 @@
+body {
+  font-size: 16px;
+  font-family: adelle-sans, sans-serif;
+  color: #25274d;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: adelle-sans, sans-serif;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 38px;
+  font-family: adelle-sans-condensed, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 26px;
+  font-family: adelle-sans, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: adelle-sans, sans-serif;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: adelle-sans-condensed, sans-serif;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: adelle-sans, sans-serif;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  color: #25274d;
+}
+
+/*NAV BAR*/
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: #7ba0c9;
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  background-image: url("../images/logowhite.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+  height: 80px;
+  margin: 20px;
+  width: 200px;
+}
+
+nav label,
+#hamburger {
+  /*hide hamburger menu*/
+  display: none;
+}
+
+nav {
+  /*link section of header*/
+  position: relative;
+  padding-top: 30px;
+  height: 100%;
+}
+
+nav ul {
+  /*style of list of nav links*/
+  list-style: none;
+}
+
+nav li {
+  /*style of main nav links*/
+  float: left;
+  padding: 25px;
+  color: #25274d;
+}
+
+#studytab {
+  /*style of div under study tab*/
+  display: none;
+  width: 800px;
+  height: 350px;
+  position: absolute;
+  top: 120px;
+  border: 2px solid white;
+}
+
+#studyleft > h3 {
+  /*style of beginner, intermediate & advanced titles */
+  color: black;
+  position: relative;
+  padding-left: 1em;
+  line-height: 3em;
+  transition: background-color 0.5s ease;
+}
+
+/*need to add javascript so the color of selected will change (maybe done with css?)*/
+#studyleft {
+  width: 33%;
+  height: 100%;
+  background-color: #7ba0c9;
+  float: left;
+}
+
+#studyright {
+  width: 65%;
+  height: 100%;
+  background-color: #c5e1fb;
+  float: right;
+  padding-left: 2%;
+}
+
+#studyright h5 {
+  padding-top: 25px;
+  margin: 0px;
+}
+
+#studyright li {
+  color: #25274d;
+  padding: 0px;
+  float: none;
+  height: 25px;
+}
+
+#studyright ul {
+  padding: 0px;
+  padding-top: 5px;
+}
+
+#beginner {
+  display: block;
+}
+
+#intermediate {
+  display: none;
+}
+
+#advanced {
+  display: none;
+}
+
+#beginner div,
+#intermediate div,
+#advanced div {
+  /*div children of beginner subtab (holds each category)*/
+  width: 45%;
+  float: left;
+  padding: 0px;
+  margin: 5px;
+}
+
+nav li:hover #studytab {
+  /*studytab appears when you hover over its li parent*/
+  display: block;
+}
+
+#quiztab {
+  display: none;
+  position: absolute;
+  width: 400px;
+  column-count: 2;
+  column-fill: balance;
+  background-color: #c5e1fb;
+  top: 120px;
+  border: 2px solid white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav li:hover #quiztab {
+  display: block;
+}
+
+#quiztab li {
+  padding: 0px;
+  float: none;
+  line-height: 3em;
+}
+
+.goback {
+  display: none;
+}
+
+/**END OF NAV CSS**/
+#herosection {
+  height: auto;
+  display: flex;
+}
+
+#lefthero,
+#righthero {
+  flex: 1;
+  height: 400px;
+}
+
+#righthero {
+  background-image: url("../images/homepagepic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 460px;
+}
+
+#lefthero {
+  background-color: #c5e1fb;
+  padding: 40px 30px 20px 30px;
+}
+
+#lefthero h1 {
+  color: #25274d;
+  text-shadow: 2px 2px #7ba0c9;
+  width: 75%;
+}
+
+.highlight {
+  background: linear-gradient(180deg, #c5e1fb 50%, white 50%);
+  display: inline;
+}
+
+/*Step by Step open a terminal*/
+
+#virtualmachine {
+  width: 90%;
+  margin: 5%;
+  margin-top: 5em;
+}
+
+.stepleft {
+  width: 75%;
+  margin-left: 0%;
+  margin-bottom: 200px;
+}
+
+.stepright {
+  max-width: 1000px;
+  margin-right: 0%;
+  margin-bottom: 200px;
+}
+
+.steppic {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/*Determine your experience level*/
+
+#experiencesection {
+  background-color: #c2c7d3;
+  height: auto;
+  padding: 4em;
+}
+
+#experiencelevel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 50px;
+  min-height: 400px;
+  max-height: 500px;
+}
+
+#experiencelevel div {
+  height: 100%;
+  margin: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: #25274d;
+}
+
+#experiencelevel div h3 {
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.levelimg {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 15%;
+  border-radius: 50%;
+}
+
+#experiencelevel ol {
+  color: #7ba0c9;
+  list-style: none;
+}
+
+footer {
+  position: relative;
+  top: 200px;
+  width: 100%;
+  height: 180px;
+  background-color: #7ba0c9;
+  border-top: 2px solid white;
+}
+
+/**quiz**/
+.quiz {
+  counter-reset: question; /*creates counter for quiz questions*/
+  margin: 75px;
+}
+
+.quizbutton {
+  background-image: linear-gradient(
+    to right,
+    #4f739c 0%,
+    #7ba0c9 51%,
+    #4f739c 100%
+  );
+  background-size: 200% auto;
+  background-position: right center;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  padding: 1em 2em 1em 2em;
+  margin-top: 25px;
+  border: none;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+}
+
+.quizbutton:hover {
+  background-position: left center;
+}
+
+input[type="radio"] {
+  margin-bottom: 2em;
+  transform: scale(2);
+  margin-left: 80px;
+}
+
+input[type="radio"]:checked {
+  background-color: #25274d;
+}
+
+.question p {
+  font-weight: 400;
+}
+
+.question .counter {
+  padding-top: 0px;
+  background-color: blue;
+}
+/*counter makes numbered circles before questions*/
+.question h4:before {
+  counter-increment: question;
+  content: counter(question);
+  background-color: #25274d;
+  padding: 15px 25px 15px 25px;
+  margin-right: 0.5em;
+  color: white;
+  border-radius: 50%;
+  float: left;
+}
+
+.qtitlebox {
+  border-bottom: 2px solid #25274d;
+}
+
+.quiztitle {
+  font-size: 40px;
+  text-align: center;
+}
+
+.incorrectResults {
+  color: red;
+}
+
+.correctResults {
+  color: green;
+}
+
+.score {
+  text-align: center;
+}
+
+/*CONTENT PAGE*/
+
+.overview {
+  /* background-color: blue; */
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 4%;
+}
+.overview p {
+  font-size: 20px;
+  margin-right: 25%;
+}
+
+/*button to go to next topic*/
+.overview button {
+  background-image: linear-gradient(
+    to right,
+    #4f739c 0%,
+    #7ba0c9 51%,
+    #4f739c 100%
+  );
+  background-size: 200% auto;
+  background-position: right center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 25px;
+  float: right;
+  transition: all 300ms ease-in-out;
+  border-radius: 2em;
+  border: none;
+}
+.overview button h6 {
+  line-height: 0px;
+  color: whitesmoke;
+}
+
+.overview button h6:after {
+  /*adds arrow after text*/
+  font-size: 1.5em;
+  content: " \279C";
+}
+
+.overview button:hover {
+  background-position: left center;
+}
+
+.divider {
+  background-color: darkgray;
+  width: 100%;
+  height: 3vh;
+  margin-top: 8%;
+}
+.divider1 {
+  background-color: darkgray;
+  width: 100%;
+  height: 3vh;
+  margin-top: 12%;
+}
+.divider2 {
+  background-color: darkgray;
+  width: 100%;
+  height: 3vh;
+  /* margin-top: 5%; */
+}
+
+.intro-text {
+  /* background-color: khaki; */
+  align-content: center;
+}
+.intro-text h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.intro-text p {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 55px;
+}
+
+/*COMMAND LIST*/
+
+.all-list {
+  display: flex;
+  width: 90%;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 50px;
+}
+
+.all-list div {
+  flex: 50%;
+  max-width: 50%;
+}
+
+.for-all-content {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.for-all-content th {
+  /* background-color: hotpink; */
+  text-align: left;
+  padding-bottom: 50px;
+  padding-right: 15px;
+}
+.for-all-content td {
+  padding-bottom: 50px;
+}
+hr {
+  width: 90%;
+  font-size: 55px;
+}
+.command {
+  /* background-color: lawngreen; */
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.command p {
+  /* background-color: mediumblue; */
+  /* display: inline-block; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 1.6;
+}
+
+.command-head h4 {
+  /* background-color: lightcyan; */
+  font-size: 20px;
+}
+.command-overview {
+  /* background-color: lightgray; */
+  font-size: 25px;
+}
+
+.command-content {
+  /*FLEX CONTAINER*/
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 18px;
+  justify-content: space-between;
+}
+
+.commandflex-left,
+.commandflex-right {
+  margin: 5px;
+}
+
+.commandflex-left {
+  flex: 30%;
+  max-width: 30%;
+}
+
+.commandflex-right {
+  flex: 60%;
+  max-width: 60%;
+  height: auto;
+}
+
+.commandflex-right pre {
+  background-color: #d3e1ed;
+  padding-left: 30px;
+  min-width: 550px;
+}
+
+code {
+  font-size: 12px;
+}
+
+/*glossary page */
+#myInput {
+  /* background-image: url('/assets/images/search-icon.png'); Add a search icon to input */
+  /* background-position: 10px 12px; Position the search icon */
+  /* background-repeat: no-repeat; Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+.myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+.myTable th,
+.myTable td {
+  color: #25274d;
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+.myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+.myTable tr.header,
+.myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+.myTable td:first-child {
+  font-weight: 700;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+/* About Us Page CSS */
+#mission-statement {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/about-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 8%;
+  padding-top: 8%;
+}
+
+#design {
+  background-color: white;
+  width: 98%;
+  padding-bottom: 15%;
+  padding-top: 15%;
+}
+#about-intro {
+  width: 80%;
+  border-style: solid;
+  border-color: #7ba0c9;
+  border-width: 10px;
+  margin-left: 13%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  padding-top: 0.5%;
+}
+#design h1 {
+  text-align: center;
+}
+#design p {
+  text-align: center;
+}
+#goals {
+  margin-top: 80px;
+}
+#goals h3 {
+  margin-left: 45%;
+  font-weight: 400;
+}
+#goals hr {
+  width: 5%;
+}
+#goal-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#goal-list h4 {
+  font-weight: lighter;
+}
+#goal-list p {
+  position: relative;
+}
+#goal-list div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#team-members {
+  background-color: #f1f1f1;
+}
+#team-title {
+  text-align: center;
+  margin-top: 5%;
+}
+#team-title h2 {
+  padding-top: 15px;
+}
+#team-title hr {
+  width: 5%;
+}
+#members {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+#members h3 {
+  position: absolute;
+  right: 50%;
+  margin-top: 10%;
+}
+#members h5 {
+  position: absolute;
+  font-size: 15px;
+  right: 78%;
+  margin-top: 33%;
+}
+#members p {
+  position: absolute;
+  margin-left: 37%;
+  margin-top: 15%;
+  right: 20%;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (max-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  #quiztab {
+    display: none;
+  }
+
+  /**FOR CONTENT PAGE CODE BLOCKS*/
+  .commandflex-left {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .commandflex-right {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .all-list div {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  /*NAV & HAMBURGER MENU*/
+  nav label {
+    font-size: 50px;
+    display: inline;
+    padding-right: 15px;
+    float: right;
+  }
+
+  nav {
+    margin: 0px;
+  }
+
+  #navcontainer {
+    display: none;
+  }
+
+  #navul {
+    /*style of main nav links*/
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: #25274d;
+  }
+
+  .navitem {
+    color: #c5e1fb;
+  }
+
+  /*displays hamburger menu when pressed on*/
+  #hamburger:checked ~ #navcontainer {
+    display: block;
+    width: 100%;
+  }
+
+  #hamburger:checked ~ #navcontainer li {
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*gets rid of hover element on hamburger menu*/
+  nav li:hover #studytab {
+    display: none;
+  }
+
+  nav li:hover #quiztab {
+    display: none;
+  }
+
+  #quiztab {
+    position: absolute;
+    width: 97%;
+    height: 290px;
+    padding: 10px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .goback {
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-weight: 900;
+    color: black;
+    font-size: 35px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  #studytab {
+    /*style of div under study tab*/
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 320px;
+  }
+
+  #studyleft > h3 {
+    /*style of beginner, intermediate & advanced titles */
+    font-size: 20px;
+    padding-left: 0.5em;
+    line-height: 4em;
+  }
+}
+@media screen and (max-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+  /*QUIZ*/
+  input[type="radio"] {
+    margin-left: 0px;
+  }
+
+  .quiz {
+    counter-reset: question; /*creates counter for quiz questions*/
+    margin: 45px;
+  }
+
+  .quiztitle {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  
+  
+  
+}
+@media screen and (max-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+  /*QUIZ*/
+
+  .question h4:before {
+    padding: 10px 17px 10px 17px;
+    margin-right: 0.5em;
+    font-size: 18px;
+  }
+
+  .question h4 {
+    font-size: 20px;
+  }
+
+  .tablink {
+    padding: 14px 6px;
+    font-size: 14px;
+  }
+
+
+  .people {
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  
+  #boss {
+    padding-top: 0em;
+  }
+  
+  #miniboss {
+    padding-top: 14em;
+  }
+  
+  #gym {
+    padding-top: 10em;
+  }
+  
+  #artist {
+    padding-top: 10em;
+  }
+  
+  #me {
+    padding-top: 8em;
+  }
+  
+  #goal-list {
+	flex-wrap: wrap;
+  }
+  
+  #goals h3 {
+	margin-left: 28%;
+  }
+  
+  #members {
+    padding-bottom: 40px;
+  }
+  
+  #members h3 {
+    text-align: center;
+	padding-bottom: 5px;
+	position: relative;
+	padding-left: 0em;
+	right: 0%;
+	margin-top: 0em;
+  }
+  
+  #members h5 {
+    padding-left: 10px;
+	right: 60%;
+  }
+  
+  #members p {
+    margin-top: 0%;
+  }
+  
+  #about-intro {
+    margin-left: 5%;
+  }
+  
+}
+@media screen and (max-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .quiz {
+    margin: 20px;
+  }
+
+  .question h4 {
+    font-size: 18px;
+  }
+  
+  
+  
+}

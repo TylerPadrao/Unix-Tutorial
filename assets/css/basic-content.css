@@ -1,0 +1,504 @@
+html {
+  height: 100%;
+  font-size: 16px;
+  font-family: adelle sans, sans-serif;
+  font-weight: 400;
+  color: #25274d;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #e9ecef;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+h1 {
+  font-size: 48px;
+  font-family: adelle sans, sans-serif;
+  font-weight: 500;
+}
+h2 {
+  font-size: 38px;
+  font-family: adelle sans cnd, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 26px;
+  font-family: adelle sans, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 24px;
+  font-family: adelle sans, sans-serif;
+  font-weight: normal;
+}
+h5 {
+  font-size: 20px;
+  font-family: adelle sans cnd, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.head {
+  width: 100%;
+  height: 120px;
+  background-color: #7ba0c9;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#logo {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+
+nav {
+  /*link section of header*/
+  position: absolute;
+  left: 200px;
+  top: 35px;
+  width: 100%;
+}
+
+nav ul {
+  /*style of list of nav links*/
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+nav li {
+  /*style of main nav links*/
+  float: left;
+  padding: 25px;
+  color: #25274d;
+}
+
+#studyleft > h3 {
+  /*style of beginner, intermediate & advanced titles */
+  color: black;
+  position: relative;
+  left: 1em;
+  line-height: 3em;
+}
+
+/*need to add javascript so the color of selected will change (maybe done with css?)*/
+#studyleft {
+  width: 33%;
+  height: 100%;
+  background-color: #7ba0c9;
+  float: left;
+}
+
+#studyright {
+  width: 65%;
+  height: 100%;
+  background-color: #c5e1fb;
+  float: right;
+  padding-left: 2%;
+}
+
+#studyright h5 {
+  padding: 0px;
+}
+
+#studyright li {
+  color: #25274d;
+  padding: 0px;
+  float: none;
+}
+
+#studyright ul {
+  padding: 0px;
+}
+
+#studytab {
+  /*style of div under study tab*/
+  display: none;
+  width: 800px;
+  height: 400px;
+  position: absolute;
+}
+nav li:hover #studytab {
+  /*studytab appears when you hover over its li parent*/
+  display: block;
+}
+
+#quiztab {
+  display: none;
+  position: absolute;
+  width: 400px;
+  column-count: 2;
+  column-fill: balance;
+  background-color: #c5e1fb;
+  padding: 10px;
+}
+
+nav li:hover #quiztab {
+  display: block;
+}
+
+#quiztab li {
+  padding: 0px;
+  float: none;
+  line-height: 3em;
+}
+
+#beginner {
+  display: block;
+}
+#intermediate {
+  display: none;
+}
+#advanced {
+  display: none;
+}
+#beginner div,
+#intermediate div,
+#advanced div {
+  /*div children of beginner subtab (holds each category)*/
+  width: 30%;
+  float: left;
+  padding: 5px;
+}
+
+/**END OF NAV CSS**/
+
+#lefthero,
+#righthero {
+  width: 50%;
+  height: 25em;
+  z-index: -1;
+  box-sizing: border-box;
+}
+#lefthero {
+  background-color: #c5e1fb;
+  float: left;
+  padding: 5%;
+}
+#righthero {
+  background-image: url(assets/heroillus.png);
+  float: right;
+  background-size: cover;
+}
+#lefthero h1 {
+  color: #7ba0c9;
+  text-shadow: 2px 2px white;
+}
+/*** Header Code Ends Here ***/
+
+.overview {
+  /* background-color: blue; */
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 25%;
+  margin-top: 4%;
+}
+.overview p {
+  font-size: 20px;
+  margin-top: 8vh;
+}
+aside {
+  background-color: grey;
+  display: inline-block;
+  margin-left: 75vw;
+  margin-right: -35vw;
+  margin-top: -30vh;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+}
+aside h5 {
+  font-size: 10px;
+  color: whitesmoke;
+}
+.divider {
+  background-color: darkgray;
+  width: 100%;
+  height: 3vh;
+  margin-top: 8%;
+}
+.divider1 {
+  background-color: darkgray;
+  width: 100%;
+  height: 3vh;
+  margin-top: 12%;
+}
+.divider2 {
+  background-color: darkgray;
+  width: 100%;
+  height: 3vh;
+  /* margin-top: 5%; */
+}
+
+.intro-text {
+  /* background-color: khaki; */
+  align-content: center;
+}
+.intro-text h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.intro-text p {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 55px;
+}
+.for-basic-content table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#t1 {
+  /* background-color: lightsalmon; */
+  float: left;
+  margin-top: 5vh;
+  margin-left: 15vw;
+}
+#t1-2 {
+  /* background-color: lightslategrey; */
+  float: right;
+  /* margin-bottom: 100vh; */
+  margin-top: -38.5vh;
+  margin-right: 42vw;
+}
+.for-basic-content th {
+  /* background-color: hotpink; */
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  padding-bottom: 50px;
+}
+#t2 {
+  /* background-color: khaki; */
+  float: right;
+  margin-top: 5vh;
+}
+#t2-2 {
+  /* background-color: mediumaquamarine; */
+  float: right;
+  width: 40%;
+  margin-top: -38.5vh;
+  margin-left: 110vw;
+}
+.for-basic-content td {
+  /* background-color: brown; */
+  display: inline-block;
+  width: 50%;
+  padding-bottom: 50px;
+}
+hr {
+  width: 90%;
+  font-size: 55px;
+}
+.mkdir {
+  /* background-color: lawngreen; */
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.mkdir p {
+  /* background-color: mediumblue; */
+  /* display: inline-block; */
+  margin-right: 35vw;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 1.6;
+}
+.mkdir-head h4 {
+  /* background-color: lightcyan; */
+  margin-top: -20px;
+  font-size: 20px;
+}
+.mkdir-overview {
+  /* background-color: lightgray; */
+  font-size: 25px;
+}
+.mkdir-content {
+  /* background-color: lightgreen; */
+  font-size: 18px;
+}
+#ex1-txt {
+  /* background-color: lightskyblue; */
+  float: right;
+  margin-top: 0px;
+  margin-right: 15vw;
+  font-size: 13px;
+}
+pre {
+  margin-left: 30vw;
+  width: 70%;
+}
+#ex1-code {
+  margin-top: -45vh;
+  font-size: 12px;
+  float: left;
+}
+#ex2-txt {
+  /* background-color: lightskyblue; */
+  float: right;
+  margin-top: -3vh;
+  margin-right: 11vw;
+  font-size: 13px;
+}
+#ex2-code {
+  margin-top: -62vh;
+  font-size: 12px;
+  float: left;
+}
+#ex3-txt {
+  /* background-color: lightskyblue; */
+  float: right;
+  margin-top: -3vh;
+  margin-right: 8vw;
+  font-size: 13px;
+}
+#ex3-code {
+  margin-top: -55vh;
+  font-size: 12px;
+  float: left;
+}
+#ex4-txt {
+  /* background-color: lightskyblue; */
+  float: right;
+  margin-top: -10vh;
+  margin-right: 10vw;
+  font-size: 13px;
+}
+#ex4-code {
+  margin-top: -45vh;
+  font-size: 12px;
+  float: left;
+}
+
+#myInput {
+  /* background-image: url('/assets/images/search-icon.png'); Add a search icon to input */
+  /* background-position: 10px 12px; Position the search icon */
+  /* background-repeat: no-repeat; Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th,
+#myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+/* #full-list {background-color: red;}
+  #begin {background-color: green;}
+  #inter {background-color: blue;}
+  #adv {background-color: orange;} */
+
+@media only screen and (max-width: 768px) {
+  aside {
+    background-color: grey;
+    display: inline-block;
+    margin-left: 15%;
+    margin-top: 10vh;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+  }
+  .overview {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  #t2 {
+    /* background-color: khaki; */
+    width: 50%;
+    margin-right: 190px;
+    margin-top: -275px;
+  }
+  #t1-2 {
+    /* background-color: lightslategrey; */
+    margin-right: 40vw;
+  }
+  #t2-2 {
+    /* background-color: mediumaquamarine; */
+    width: 40%;
+    margin-right: 25px;
+  }
+  .mkdir p {
+    /* background-color: mediumblue; */
+    /* display: inline-block; */
+    width: 100%;
+    margin-right: 35vw;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 1.6;
+  }
+  pre {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #ex2-code {
+    font-size: 12px;
+    width: 120%;
+    /* padding-right: 100px; */
+  }
+  /* #text {
+    margin-left: 100px;
+    width: 300px;
+  } */
+  #ex1-txt {
+    /* background-color: lightskyblue; */
+    float: right;
+    margin-top: -5vh;
+    margin-right: 0vw;
+    text-align: left;
+    font-size: 13px;
+    overflow: auto;
+    padding-top: 20vh;
+  }
+}
